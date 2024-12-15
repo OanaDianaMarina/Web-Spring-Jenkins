@@ -24,7 +24,7 @@ public class PersonRESTController {
 
 	 @GetMapping
 	public List<PersonDto> searchAll() {
-		return svc.searchAll().stream().map((p)->new PersonDto(p.getName())).toList();
+		return svc.searchAll().stream().map((p)->new PersonDto(p.getName().toUpperCase())).toList();
 	}
 	 
 	 
