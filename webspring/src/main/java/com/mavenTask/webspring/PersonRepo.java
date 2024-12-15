@@ -5,6 +5,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
+import com.mavenTask.webspring.models.Person;
+
 @Component
 public class PersonRepo {
 	private List<Person> people = new ArrayList<Person>();
